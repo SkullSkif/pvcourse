@@ -1,0 +1,7 @@
+#!/bin/sh
+#SBATCH --nodes=2 --ntasks-per-node=2
+#SBATCH --job-name=fldpvt
+
+cd $SLURM_SUBMIT_DIR
+
+mpiexec ./a.out
